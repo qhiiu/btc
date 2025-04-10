@@ -333,9 +333,9 @@ void init_value(int mode, uint64_t P, uint64_t xN, std::string& address,Int& pri
             // rangeEnd.SetBase16("2832ed74f90000000");
             // // --------------------- test=end -------------------------
             // --------------------- test -----------------------------
-            address = "13BbTbEmtoNgcL2ERkYSPwuxb9xdEjgfnt";
-            rangeStart.SetBase16("fa504f9d4982fe985188e2f9abd1a4ae3b6a230f54fc679495e8a70500f0e0d3");
-            rangeEnd.SetBase16("fa504f9d4982fe985188e2f9abd1a4ae3b6a230f54fc679495e8a705fff0e0d3");
+            // address = "13BbTbEmtoNgcL2ERkYSPwuxb9xdEjgfnt";
+            // rangeStart.SetBase16("fa504f9d4982fe985188e2f9abd1a4ae3b6a230f54fc679495e8a70500f0e0d3");
+            // rangeEnd.SetBase16("fa504f9d4982fe985188e2f9abd1a4ae3b6a230f54fc679495e8a705fff0e0d3");
             // --------------------- test=end -------------------------
     std::cout << "\nPUZZLE      : " << P;
     std::cout << "\nADDRESS     : " << address;

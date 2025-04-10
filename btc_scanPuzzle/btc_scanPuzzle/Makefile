@@ -14,7 +14,7 @@ CUDA       = /usr/local/cuda-12.6
 CXXCUDA    = /usr/bin/g++
 NVCC       = $(CUDA)/bin/nvcc
 # nvcc requires joint notation w/o dot, i.e. "5.2" -> "52"
-CCAP = 86 #https://developer.nvidia.com/cuda-gpus
+CCAP = 61 #https://developer.nvidia.com/cuda-gpus
 ccap       = $(shell echo $(CCAP) | tr -d '.')
 
 CXXFLAGS   =  -DWITHGPU -m64 -mssse3 -Wno-write-strings -O2 -I. -I$(CUDA)/include
@@ -32,8 +32,8 @@ $(OBJDIR)/%.o : %.cpp
 all: KeyHunt
 
 KeyHunt: $(OBJET)
-	@echo Making puzzleBTC ...
-	$(CXX) $(OBJET) $(LFLAGS) -o puzzleBTC_$(CCAP)
+	@echo Making puzzle ...
+	$(CXX) $(OBJET) $(LFLAGS) -o puzzle_$(CCAP)
 
 $(OBJET): | $(OBJDIR) $(OBJDIR)/GPU $(OBJDIR)/hash
 
