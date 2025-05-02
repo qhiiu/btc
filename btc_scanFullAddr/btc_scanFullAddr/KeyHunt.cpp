@@ -93,7 +93,7 @@ KeyHunt::~KeyHunt()
     for (int i = 0; i < this->xN; i++) // loop to save each priv_dec 
     {
         saveData <<"\n"<< priv_dec_copy.GetBase10(); // write data into file
-		std::cout << "\nsaved : "<< priv_dec_copy.GetBase10();
+		// std::cout << "\nsaved : "<< priv_dec_copy.GetBase10(); //print to screen
         priv_dec_copy.AddOne(); 
     }
 
