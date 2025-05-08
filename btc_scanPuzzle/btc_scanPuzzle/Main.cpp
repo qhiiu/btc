@@ -432,6 +432,18 @@ int main(){
 		std::cout << "\n-- sleep : "<< sleepTime << " s ------ i = "<< i << std::endl; 
 		run(mode, P, xN);
 		
+        // GPU sleep-relax each i= x10
+        if( i%10 == 0){
+            int sleepEach10i = 200;
+            for (int j = sleepEach10i; j >= 0; j--){
+                sleep(1);   
+                printf("----->  %d s  <-----",j);
+                fflush(stdout);
+                printf("\r");
+            }
+            printf("\n");
+        }
+
         // coutdown sleeptime
         for (int j = sleepTime; j >= 0; j--){
             sleep(1);   
